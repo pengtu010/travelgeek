@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f4f4f9, #e9ecef);
+        }
+
+        .navbar {
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            color: #ff7200;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff7200;
+        }
+
+        .contact-header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contact-header h1 {
+            font-size: 42px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .contact-form-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form-container .form-group {
+            position: relative;
+        }
+
+        .contact-form-container .form-group i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #aaa;
+            font-size: 18px;
+        }
+
+        .contact-form-container .form-group input,
+        .contact-form-container .form-group textarea {
+            width: 100%;
+            padding: 15px 15px 15px 40px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .contact-form-container .form-group input:focus,
+        .contact-form-container .form-group textarea:focus {
+            border-color: #ff7200;
+            box-shadow: 0 0 8px rgba(255, 114, 0, 0.3);
+            outline: none;
+        }
+
+        .contact-form-container button {
+            background: #ff7200;
+            color: white;
+            font-size: 18px;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form-container button:hover {
+            background: #e65a00;
+        }
+
+        .contact-form-container button i {
+            font-size: 18px;
+        }
+
+        .vip-section {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .vip-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .vip-section p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .vip-section button {
+            background: #28a745;
+            color: #333;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .vip-section button:hover {
+            background: #218838;
+        }
+
+        .social-media {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .social-media h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 22px;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #ff7200;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Travel Geek</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="service.html">Service</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Fill out the form below or reach out directly if you have any queries whatsoever.</p>
+    </div>
+
+    <div class="contact-form-container">
+        <form>
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Type your name" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-globe"></i>
+                <input type="text" placeholder="Country" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-phone-alt"></i>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-comments"></i>
+                <textarea rows="5" placeholder="Your Feedback" required></textarea>
+            </div>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+    </div>
+
+    <div class="vip-section">
+        <h2>Become a VIP Member</h2>
+        <p>Join for only 1.99 yuan per month! Enjoy exclusive discounts on travel packages and discuss with a personal travel guide.</p>
+        <button>Join Now</button>
+    </div>
+
+    <div class="social-media">
+        <h3>Follow us:</h3>
+        <a href="#"><i class="fab fa-weixin"></i></a>
+        <a href="#"><i class="fab fa-weibo"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</body>
+</html>

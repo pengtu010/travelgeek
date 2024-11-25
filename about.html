@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us - Travel Geek</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .navbar .logo {
+            color: #ff7200;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar ul li a:hover {
+            color: #ff7200;
+        }
+        .header {
+            background: url('images/2.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 0 20px;
+        }
+        .header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .about-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .about-container h2 {
+            font-size: 36px;
+            color: #ff7200;
+            margin-bottom: 20px;
+        }
+        .about-container p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .feature-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .feature-card p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Travel Geek</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1>Welcome to Travel Geek</h1>
+    </div>
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>
+            At <strong>Travel Geek</strong>, we aim on making travel planning simple, enjoyable, 
+            and cheap to your specific preferences. Whether you’re dreaming of sandy beaches, 
+            bustling cities, serene mountains, or cultural landmarks, we’re here to guide you 
+            in making informed decisions to ensure a perfect travel experience.
+        </p>
+        <h2>How We Help You Choose</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Personalized Suggestions</h3>
+                <p>
+                    Select your prefered destination type by answering a few simple questions about your preferences, and our system 
+                    recommends destinations that fit your style, whether it’s adventure, 
+                    relaxation, or cultural exploration. You can even book flights and hotels directly from our site just with a click.
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>Budget Planning</h3>
+                <p>
+                    Enter your budget, and we’ll show you destinations and travel plans 
+                    that match, ensuring you can enjoy your trip without breaking the bank.
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>Comprehensive Guides</h3>
+                <p>
+                    Access detailed travel guides, including information on attractions, 
+                    transportation, local cuisines, and accommodations for each destination.
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>Filter by Interest</h3>
+                <p>
+                    Whether you love nature, history, nightlife, or food, use our filters 
+                    to find destinations that cater to your interests.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

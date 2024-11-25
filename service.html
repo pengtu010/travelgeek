@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: #ff7200;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff7200;
+        }
+
+        .service-header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .service-header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .service-header p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .form-container form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .form-container label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #ff7200;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #e65a00;
+        }
+
+        .book-link {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .book-link a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            background-color: #ff7200;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .book-link a:hover {
+            background-color: #e65a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Travel Geek</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="service-header">
+        <h1>Our Services</h1>
+        <p>Find your perfect travel destination based on your preferences.</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Travel Preference Form</h2>
+        <form action="#" method="POST">
+            <label for="budget">Budget in Yuan（人民币):</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+
+            <label for="hobbies">Your Hobbies/Interests:</label>
+            <select id="hobbies" name="hobbies" required>
+                <option value="">Select one</option>
+                <option value="adventure">Adventure</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="nature">Nature Exploration</option>
+                <option value="history">Historical Sites</option>
+                <option value="nightlife">Nightlife</option>
+            </select>
+
+            <label for="scenery">Preferred Scenery:</label>
+            <select id="scenery" name="scenery" required>
+                <option value="">Select one</option>
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountains</option>
+                <option value="city">Cityscapes</option>
+                <option value="forest">Forests</option>
+            </select>
+
+            <label for="culture">Interest in Local Culture:</label>
+            <textarea id="culture" name="culture" rows="3" placeholder="Describe your interest in culture (optional)"></textarea>
+
+            <label for="food">Preferred Type of Cuisine:</label>
+            <input type="text" id="food" name="food" placeholder="Enter your preferred type of food">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="book-link">
+        <a href="https://www.bookmyflight.com" target="_blank">Check the prices of flights and hotels</a>
+    </div>
+</body>
+</html>

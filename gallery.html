@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: #ff7200;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff7200;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .gallery-header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .gallery-header p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery-container .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-container .gallery-item img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+            border-bottom: 4px solid #ff7200;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .gallery-container .gallery-item h3 {
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0 5px;
+            font-family: 'Georgia', serif;
+        }
+
+        .gallery-container .gallery-item p {
+            font-size: 16px;
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Travel Geek</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="gallery-header">
+        <h1>World Photo Gallery</h1>
+        <p>Explore the beauty of the world through our curated collection of photos.</p>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/bali.jpg" alt="Bali">
+            <h3>Bali, Indonesia</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="images/nepal.jpg" alt="Nepal">
+            <h3>Shek Phoksundo, Nepal</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="images/venice.jpg" alt="Venice">
+            <h3>Venice, Italy</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="images/singapore.jpg" alt="Singapore">
+            <h3>Singapore</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="images/china.jpg" alt="China">
+            <h3>Furong Ancient City, China</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="images/barcelona.jpg" alt="Barcelona">
+            <h3>Barcelona, Spain</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="images/dubai.jpg" alt="Dubai">
+            <h3>Dubai, UAE</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="images/malaysia.jpg" alt="Malaysia">
+            <h3>Tugu Negara, Malaysia</h3>
+        </div>
+    </div>
+</body>
+</html>
